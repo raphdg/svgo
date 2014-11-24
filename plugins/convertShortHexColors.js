@@ -21,9 +21,9 @@ exports.fn = function(item) {
                 // Convert long hex to short hex
                 if (match = val.match(regHEX)) {
                     val = '#' + match[0][1] + match[0][1] + match[0][2] + match[0][2] + match[0][3] + match[0][3];
+                    attr.value = val;
                 }
 
-                attr.value = val;
 
             }
 
